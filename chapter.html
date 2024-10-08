@@ -109,7 +109,7 @@
         const type = urlParams.get('type');
         const page = urlParams.get('page'); // New parameter to track the previous page
 
-        subject = subject.replace(/\s+/g, '_');
+        subject = subject.toLowerCase().replace(/\s+/g, '_');
 
         function goBack() {
             window.location.href = page || `subject.html?board=${board}&class=${userClass}&type=${type}`;
