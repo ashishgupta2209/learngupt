@@ -117,8 +117,8 @@
 
         document.querySelector('.back-button').onclick = goBack;
 
-        document.getElementById('subjectTitle').textContent = subject.replace(/_/g, ' ');
-
+        document.getElementById('subjectTitle').textContent = displaySubject;
+        
         const csvFilePath = `Chapters/chapters_${board}_${userClass}_${subject}.csv`;
         console.log(`Fetching chapters from: ${csvFilePath}`);
 
